@@ -1,0 +1,80 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace Megallix
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+            Console.WriteLine("- Do you wish to enter the alley?");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("- \"Yes.\" or \"No.\"");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine();
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("- You think to yourself,");
+            var prompt = Convert.ToString(Console.ReadLine());
+            System.Threading.Thread.Sleep(1000);
+
+            if (prompt == "Yes.")
+            {
+                Console.WriteLine();
+                System.Threading.Thread.Sleep(1000);
+            }
+            else if (prompt == "No.")
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+                Console.WriteLine("Invalid response.");
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine("Please restart the application.");
+                System.Threading.Thread.Sleep(1000);
+                Environment.Exit(0);
+            }
+
+            Console.WriteLine("- A distant, echoey voice calls out.");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine();
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("\"Doin'.\"");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine();
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("- Doin' what, you ask yourself.");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine();
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("- You say,");
+            var response = Convert.ToString(Console.ReadLine()); //sample response: balls
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine();
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("- The cr͜e̸at҉ur͏e̡ responds,");
+            System.Threading.Thread.Sleep(1000);
+            response = "Deez " + response;
+            for (int i = 0; i < response.Length; i++)
+            {
+                System.Threading.Thread.Sleep(500);
+                Console.Write(response[i]);
+            }
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine(".");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine(".");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine(".");
+            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine(".");
+            System.Threading.Thread.Sleep(1000);
+        }
+    }
+}
